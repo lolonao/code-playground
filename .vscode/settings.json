@@ -1,12 +1,3 @@
-# code-playground
-
-様々プログラミング言語での実験場
-
-[【Vscode】過去のリリースで知らなかったかもしれない新機能のまとめ #VSCode - Qiita](https://qiita.com/Notta_Engineering/items/59fcee7f9c7e0605d3d2)
-
-## .vscodeの内容
-
-```json
 {
     "editor.fontFamily": "'Droid Sans Mono','Noto Sans Mono CJK JP','monospace'",
     "editor.guides.indentation": false,
@@ -16,6 +7,3 @@
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "off",
 }
-```
-
-
