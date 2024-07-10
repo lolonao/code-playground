@@ -6,4 +6,5 @@
     "editor.hover.sticky": true,
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "off",
+    "editor.stickyScroll.enabled": false,
 }
