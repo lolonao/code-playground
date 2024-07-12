@@ -6,6 +6,7 @@ import libsql_experimental as libsql
 # auth_token = os.getenv("TURSO_AUTH_TOKEN")
 # print(auth_token)
 
+# データベース名は、 my-db
 TURSO_DATABASE_URL='libsql://my-db-lolonaoo.turso.io'
 TURSO_AUTH_TOKEN='eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjA2MDI2MzEsImlkIjoiZWM2YmM4M2YtMDE5NS00YTFlLWJhNjEtMGZiMTNjM2U3ZTAzIn0.B7Y8q4jMAL2YreLQhdqWjLn_Rxp2cszp87oZm7K5jYuh-FBDBMui9uqnJIfFAbKtBhS48HtkeH8vVPAIwQSPCA'
 
