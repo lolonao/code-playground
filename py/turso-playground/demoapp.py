@@ -21,6 +21,7 @@ class HeroCreate(SQLModel):
     secret_name: str
     age: int | None = None
 
+
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
 
@@ -35,7 +36,6 @@ def read_heroes():
     with Session(engine) as session:
         heroes = session.exec(select(Hero)).all()
         return heroes
-
 
 def main():
     pass
