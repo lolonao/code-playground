@@ -3,10 +3,9 @@
 様々プログラミング言語での実験場
 
 
-[Basic usage | Documentation | Poetry - Python dependency management and packaging made easy](https://python-poetry.org/docs/basic-usage/)
+- [Basic usage | Documentation | Poetry - Python dependency management and packaging made easy](https://python-poetry.org/docs/basic-usage/)
 
-
-[【Vscode】過去のリリースで知らなかったかもしれない新機能のまとめ #VSCode - Qiita](https://qiita.com/Notta_Engineering/items/59fcee7f9c7e0605d3d2)
+- [【Vscode】過去のリリースで知らなかったかもしれない新機能のまとめ #VSCode - Qiita](https://qiita.com/Notta_Engineering/items/59fcee7f9c7e0605d3d2)
 
 ## .vscodeの内容
 
