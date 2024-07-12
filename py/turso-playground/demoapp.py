@@ -47,3 +47,11 @@ class HeroCreate(SQLModel):
 #         heroes = session.exec(select(Hero)).all()
 #         return heroes
 
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    print("hogehoge")
+
