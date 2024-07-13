@@ -38,3 +38,7 @@ source .vnev/bin/activate
 pip install fastapi sqlmodel sqlalchemy sqlalchemy-libsql
 ```
 
+## Links
+
+- [クイックスタート - Turso](https://docs.turso.tech/quickstart)
+- [Turso Quickstart (Python) - Turso](https://docs.turso.tech/sdk/python/quickstart)

@@ -9,10 +9,17 @@ import libsql_experimental as libsql
 conn = libsql.connect("./local_demo1.db")
 cur = conn.cursor()
 
-# クエリの実行
-conn.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER);")
-conn.execute("INSERT INTO users(id) VALUES (10);")
-conn.execute("INSERT INTO users(id) VALUES (20);")
+def exec_query():
+    # クエリの実行
+    conn.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER);")
+    conn.execute("INSERT INTO users(id) VALUES (10);")
+    conn.execute("INSERT INTO users(id) VALUES (20);")
 
-print(conn.execute("select * from users").fetchall())
+    print(conn.execute("select * from users").fetchall())
 
+def main():
+    exec_query()
+
+
+if __name__ == "__main__":
+    main()
