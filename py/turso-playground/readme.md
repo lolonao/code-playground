@@ -8,7 +8,7 @@
 Turso CLIでデータベースを作成する。
 
 ```
-turso db create my-db
+turso db create DB名
 ```
 
 データベースのURLを取得する。
@@ -26,7 +26,7 @@ turso db tokens create DB名
 SQLシェルに接続する。
 
 ```
-turso db shell my-db
+turso db shell DB名
 ```
 
 

@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Droid Sans Mono','Noto Sans Mono CJK JP','monospace'",
+    "editor.fontFamily": "'Fira Code','JetBrains Mono','Droid Sans Mono','Noto Sans Mono CJK JP','monospace'",
     "editor.guides.indentation": false,
     "breadcrumbs.showNumbers": true,
     "editor.codeActionWidget.showHeaders": true,
