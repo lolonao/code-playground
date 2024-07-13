@@ -1,5 +1,10 @@
 # Coins.ph API
 
+
+## すべてのペアを表示
+
+> https://api.pro.coins.ph/openapi/v1/ticker/price?symbol
+
 ## SYMBOL PRICE TICKER
 
 > https://api.pro.coins.ph/openapi/v1/ticker/price?symbols=[BTCPHP,DOGEPHP,BONKPHP,SOLPHP]

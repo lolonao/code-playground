@@ -1,6 +1,6 @@
 
 import requests
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, field_validator
 import asyncio
 
 # APIエンドポイントURL
@@ -18,7 +18,7 @@ class PriceInfo(BaseModel):
     symbol: str
     price: float
 
-    @validator("price")
+    @field_validator("price")
     def validate_price(cls, v):
         """
         price属性の値を検証する
@@ -54,7 +54,7 @@ async def get_price():
         # 価格情報を整形して表示
         for item in data:
             price_info = PriceInfo(**item)  # Pydantic モデルに変換
-            formatted_price = f"{price_info.price:,.2f}"
+            formatted_price = f"{price_info.price:,.7f}"
             print(f"{price_info.symbol}: {formatted_price}")
 
     except Exception as error:
