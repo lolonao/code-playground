@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from pydantic import BaseModel, PositiveInt
 
 
@@ -30,11 +29,10 @@ external_data = {
 }
 
 user = User(**external_data)  
-
 user.id = 1
-
 print(user.id)  
 #> 123
+
 print(user.model_dump())  
 """
 {
