@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "schedule-playground"
+version = "0.1.0"
+description = ""
+authors = ["lolonao <lolonao47@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+schedule = "^1.2.2"
+croniter = "^2.0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
