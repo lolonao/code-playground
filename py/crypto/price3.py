@@ -9,7 +9,8 @@ import datetime as dt
 
 
 # APIエンドポイントURL
-pairs: str = "symbols=[BTCPHP,DOGEPHP,BONKPHP,SOLPHP,TRUMPPHP]"
+# pairs: str = "symbols=[BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,DOGEPHP]"
+pairs: str = "symbols=[SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
 url: str = f"https://api.pro.coins.ph/openapi/v1/ticker/price?{pairs}"
 
 # 価格情報モデル
@@ -60,7 +61,7 @@ async def get_price():
         # 価格情報を整形して表示
         for item in data:
             price_info = PriceInfo(**item)  # Pydantic モデルに変換
-            if price_info.symbol == "BONKPHP":
+            if price_info.symbol == "BONKPHP" or "SIHBPHP":
                 formatted_price = f"{price_info.price:,.7f}"
             else:
                 formatted_price = f"{price_info.price:,.2f}"
