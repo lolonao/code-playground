@@ -9,7 +9,8 @@ import datetime as dt
 
 
 # APIエンドポイントURL
-url = "https://api.pro.coins.ph/openapi/v1/ticker/price?symbols=[BTCPHP,DOGEPHP,BONKPHP,SOLPHP]"
+pairs: str = "symbols=[BTCPHP,DOGEPHP,BONKPHP,SOLPHP,TRUMPPHP]"
+url: str = f"https://api.pro.coins.ph/openapi/v1/ticker/price?{pairs}"
 
 # 価格情報モデル
 class PriceInfo(BaseModel):
@@ -90,9 +91,9 @@ if __name__ == "__main__":
     # 毎日午前9時にジョブを実行
     # schedule.every().day.at("09:00").do(job)
     # 1分お気に実行
-    schedule.every(5).minutes.do(job)
+    schedule.every(1).minutes.do(job)
 
     while True:
         # スケジュールされたジョブを実行
         schedule.run_pending()
-        time.sleep(60)
+        time.sleep(10)
