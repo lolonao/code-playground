@@ -59,7 +59,10 @@ async def get_price():
         # 価格情報を整形して表示
         for item in data:
             price_info = PriceInfo(**item)  # Pydantic モデルに変換
-            formatted_price = f"{price_info.price:,.7f}"
+            if price_info.symbol == "BONKPHP":
+                formatted_price = f"{price_info.price:,.7f}"
+            else:
+                formatted_price = f"{price_info.price:,.2f}"
             print(f"{price_info.symbol}: {formatted_price}")
 
     except Exception as error:
@@ -87,9 +90,9 @@ if __name__ == "__main__":
     # 毎日午前9時にジョブを実行
     # schedule.every().day.at("09:00").do(job)
     # 1分お気に実行
-    schedule.every(1).minutes.do(job)
+    schedule.every(5).minutes.do(job)
 
     while True:
         # スケジュールされたジョブを実行
         schedule.run_pending()
-        time.sleep(10)
+        time.sleep(60)
