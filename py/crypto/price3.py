@@ -10,7 +10,8 @@ import datetime as dt
 
 # APIエンドポイントURL
 # pairs: str = "symbols=[BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,DOGEPHP]"
-pairs: str = "symbols=[SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
+# pairs: str = "symbols=[SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
+pairs: str = "symbols=[USDTPHP,BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
 url: str = f"https://api.pro.coins.ph/openapi/v1/ticker/price?{pairs}"
 
 # 価格情報モデル
