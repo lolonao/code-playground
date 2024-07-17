@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "esp32"
+version = "0.1.0"
+description = ""
+authors = ["lolonao <lolonao47@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+thonny = "^4.1.4"
+esptool = "^4.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
