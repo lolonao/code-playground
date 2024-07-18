@@ -157,6 +157,16 @@ files = [
 ]
 
 [[package]]
+name = "month"
+version = "1.2.0"
+description = "A simple printer of month lists add law list tab"
+optional = false
+python-versions = "*"
+files = [
+    {file = "month-1.2.0.tar.gz", hash = "sha256:8e316dace86b78402b9fff7b89a5133ca09a6e10ea4c9969760ff72303a9b1d0"},
+]
+
+[[package]]
 name = "requests"
 version = "2.32.3"
 description = "Python HTTP for Humans."
@@ -208,4 +218,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "e99d2e701c3d8073cc9ea67000ff15b49465ad113430b61a114ecbbf77937c01"
+content-hash = "b2e903861b83eb777e6b69882c6be1b41b9f022d1790708233bf632d7c3d45a2"
