@@ -11,6 +11,8 @@ requests = "^2.32.3"
 bs4 = "^0.0.2"
 month = "^1.2.0"
 duckdb = "^1.0.0"
+pandas = "^2.2.2"
+polars = "^1.2.1"
 
 
 [build-system]
