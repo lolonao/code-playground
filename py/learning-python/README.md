@@ -21,6 +21,7 @@
 ## データ解析
 
 - [How Fast can Python Parse 1 Billion Rows of Data? - YouTube](https://www.youtube.com/watch?v=utTaPW32gKY)
+- [特定の文字列を含むデータのみ合計する – セールスアナリティクス](https://www.salesanalytics.co.jp/software/excel/excel-func/excel_func014/)
 
 ## 表計算関連
 
