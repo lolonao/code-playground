@@ -36,3 +36,7 @@
 - [(165) Python Tutorial: Movie App + IMDb API Requests - YouTube](https://www.youtube.com/watch?v=-5xfLcVxD0o)
 
 
+## Flask
+
+- [(203) Full Flask Course For Python - From Basics To Deployment - YouTube](https://www.youtube.com/watch?v=oQ5UfJqW5Jo)
+
