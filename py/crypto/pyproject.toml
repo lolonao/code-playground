@@ -17,6 +17,9 @@ sqlmodel = "^0.0.20"
 duckdb = "^1.0.0"
 schedule = "^1.2.2"
 
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
 
 [build-system]
 requires = ["poetry-core"]
