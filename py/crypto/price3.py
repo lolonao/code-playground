@@ -1,11 +1,27 @@
-
+import datetime as dt
+import time
+import json
+import asyncio
 import requests
 from pydantic import BaseModel, field_validator
-import asyncio
-
 import schedule
-import time
-import datetime as dt
+
+
+def get_usd_jpy():
+    url = 'https://api.exchangerate-api.com/v4/latest/USD'
+    response = requests.get(url)
+    data = json.loads(response.content)
+    exchange_rate = data['rates']['JPY']
+    print("USD/PHP exchange rate: ", data['rates']['PHP'])
+    return exchange_rate
+
+
+def get_php_jpy():
+    url = 'https://api.exchangerate-api.com/v4/latest/PHP'
+    response = requests.get(url)
+    data = json.loads(response.content)
+    exchange_rate = data['rates']['JPY']
+    return exchange_rate
 
 
 # APIエンドポイントURL
@@ -83,13 +99,18 @@ async def main():
     """
     非同期的に価格取得処理を実行する
     """
+    usd_jpy = get_usd_jpy()
+    print("USD/JPY exchange rate: ", usd_jpy)
+    php_jpy = get_php_jpy()
+    print("PHP/JPY exchange rate: ", php_jpy)
+    print()
     await get_price()
     print("---------")
 
 
 if __name__ == "__main__":
     import asyncio
-    
+
     # 毎日午前9時にジョブを実行
     # schedule.every().day.at("09:00").do(job)
     # 1分お気に実行
@@ -99,3 +120,8 @@ if __name__ == "__main__":
         # スケジュールされたジョブを実行
         schedule.run_pending()
         time.sleep(10)
+
+"""
+    url = 'https://api.exchangerate-api.com/v4/latest/PHP'
+
+"""
