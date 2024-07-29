@@ -27,7 +27,8 @@ def get_php_jpy():
 # APIエンドポイントURL
 # pairs: str = "symbols=[BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,DOGEPHP]"
 # pairs: str = "symbols=[SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
-pairs: str = "symbols=[USDTPHP,BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
+# pairs: str = "symbols=[USDTPHP,BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
+pairs: str = "symbols=[BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
 url: str = f"https://api.pro.coins.ph/openapi/v1/ticker/price?{pairs}"
 
 # 価格情報モデル
@@ -89,9 +90,8 @@ async def get_price():
         print(f"エラーが発生しました: {error}")
 
 def job():
-    print("1分おきに実行します。")
+    # print("1分おきに実行します。")
     print(dt.datetime.now())
-    import asyncio
     asyncio.run(main())
 
 # メイン処理 (非同期)
