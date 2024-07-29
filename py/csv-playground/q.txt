@@ -1,0 +1,21 @@
+CSVファイル1
+id,name,area,keywords,hitosara_url,homepage_url,exception,memo
+1,"バー＆カフェ　カメリア","丸の内","バー・カクテル 洋食 居酒屋",https://hitosara.com/0006085891/,http://www.tokyostationhotel.jp/restaurants/camellia/,"",""
+2,"バー＆ラウンジ　トゥエンティエイト","新橋/汐留","カフェ バー・カクテル 喫茶",https://hitosara.com/0004023729/,http://www.conradtokyo.co.jp/twentyeight/,"",""
+3,"鉄板焼き&バー CRAVE","西新井","お好み焼き・もんじゃ ダーツバー 鉄板焼き",https://hitosara.com/0020006344/,"","",""
+4,"オイスターバー&ワイン　BELON広尾店","広尾","イタリアン オイスターバー ワインバー",https://hitosara.com/0031664184/,https://www.oysterbar-tokyo.co.jp,"",""
+5,"くさやバー","池袋東口/東池袋","バー・カクテル 焼酎バー 和食",https://hitosara.com/0006114865/,"","",""
+
+CSVファイル2
+id,name,hitosara_url,homepage_url,title,insta_url,summary
+1,バー＆カフェ　カメリア,https://hitosara.com/0006085891/,http://www.tokyostationhotel.jp/restaurants/camellia/,東京ステーションホテル The Tokyo Station Hotel,https://www.instagram.com/tokyostationhotel/,カフェ&バー カメリアもこれまでと内装を変えダークピンクが印象的な設えへ、より ... バー＆カフェ カメリアでは、丸の内シティを眺めながらゆったりとアフタヌーン ...
+3,鉄板焼き&バー CRAVE,https://hitosara.com/0020006344/,,鉄板焼き&バー CRAVE (@crave0901),https://www.instagram.com/crave0901/,西新井駅東口徒歩1分ランチ 11:30〜14:30 鉄板焼き 17:00〜24:00 バー 22:00〜6:00 テイクアウト、Uber eatsもやってます！
+3,鉄板焼き&バー CRAVE,https://hitosara.com/0020006344/,,SUOCCA-S2 (@suocca) • Instagram photos and videos,https://www.instagram.com/suocca/,煙草が吸える飲食店を掲載しているWEBメディア【SUOCCA】の編集部です♪ 今日は西新井の【鉄板焼き&バー CRAVE】をご紹介します！ ・基本情報住所 ...
+7,ザ　コークスクリュー　バー＆グリル,https://hitosara.com/0020002399/,,The CorkScrew Bar&Grill （ザ・コークスクリュー ... - Instagram,https://www.instagram.com/the_corkscrew_ootemachi/,Lunch 11:00〜15:00（LO 14:30） Dinner 17:00〜22:30（LO 21:30 / 22:00） 土日・祝日定休大手町ファーストスクエアB1階大手町 C8・C11出口駅直結. 1-5-1 大手町 ...
+7,ザ　コークスクリュー　バー＆グリル,https://hitosara.com/0020002399/,,もりもりだいや (@morimoridaiya),https://www.instagram.com/morimoridaiya/,#ザコークスクリューバーアンドグリル #大手町#大人のお子様ランチ#東京#エビフライ#東京グルメ#東京ランチ#大手町グルメ#大手町ランチ#大手町ディナー#恵比寿グルメ ...
+8,レストランアピシウス,https://hitosara.com/0006052076/,http://www.apicius.co.jp/index.html,フレンチレストランアピシウス 公式 (@apicius_tokyo),https://www.instagram.com/apicius_tokyo/,フレンチレストラン「アピシウス」は、1983年4月に有楽町・蚕糸会館にて創業。店名は、古代ローマ時代の令名高き食通であり、世界最古の料理書と言われる「料理大全」 ...
+
+
+CSVファイル1のidが、CSVファイル2に存在しないデータを抽出して。
+
+
