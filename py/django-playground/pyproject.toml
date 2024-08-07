@@ -1,13 +1,12 @@
 [project]
-name = "pydantic-playgound"
+name = "django-playground"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
     { name = "lolonao", email = "lolonao47@gmail.com" }
 ]
 dependencies = [
-    "mypy>=1.11.1",
-    "pydantic>=2.8.2",
+    "django>=5.0.8",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -24,4 +23,4 @@ dev-dependencies = []
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pydantic_playgound"]
+packages = ["src/django_playground"]
