@@ -40,3 +40,12 @@
 
 - [(203) Full Flask Course For Python - From Basics To Deployment - YouTube](https://www.youtube.com/watch?v=oQ5UfJqW5Jo)
 
+
+## Youtube
+
+- [(474) 【スプレッドシート】Pythonからスプレッドシートを操作しよう！〜業務効率化〜 初心者向け - YouTube](https://www.youtube.com/watch?v=KkDt3GMS00k)
+- [(474) 10 Python Comprehensions You SHOULD Be Using - YouTube](https://www.youtube.com/watch?v=twxE0dEp3qQ)
+- [(489) 10 Important Python Concepts In 20 Minutes - YouTube](https://www.youtube.com/watch?v=Gx5qb1uHss4)
+- [(474) Getting Started With DuckDB For Data Analytics In Python - YouTube](https://www.youtube.com/watch?v=3KZyUboRwM8)
+
+
