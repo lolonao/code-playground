@@ -28,7 +28,7 @@ def get_php_jpy():
 # pairs: str = "symbols=[BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,DOGEPHP]"
 # pairs: str = "symbols=[SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
 # pairs: str = "symbols=[USDTPHP,BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
-pairs: str = "symbols=[BTCPHP,SOLPHP,BONKPHP,TRUMPPHP,SHIBPHP]"
+pairs: str = "symbols=[BTCPHP,SOLPHP]"
 url: str = f"https://api.pro.coins.ph/openapi/v1/ticker/price?{pairs}"
 
 # 価格情報モデル
@@ -115,6 +115,8 @@ if __name__ == "__main__":
     # schedule.every().day.at("09:00").do(job)
     # 1分お気に実行
     schedule.every(1).minutes.do(job)
+
+    job()
 
     while True:
         # スケジュールされたジョブを実行

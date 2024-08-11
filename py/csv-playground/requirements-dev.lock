@@ -12,22 +12,42 @@
 -e file:.
 annotated-types==0.7.0
     # via pydantic
+blinker==1.8.2
+    # via flask
 certifi==2024.7.4
     # via requests
 charset-normalizer==3.3.2
     # via requests
+click==8.1.7
+    # via flask
 duckdb==1.0.0
     # via csv-playground
+flask==3.0.3
+    # via sqlite-web
+greenlet==3.0.3
+    # via sqlalchemy
 idna==3.7
     # via requests
+itsdangerous==2.2.0
+    # via flask
+jinja2==3.1.4
+    # via flask
+markupsafe==2.1.5
+    # via jinja2
+    # via werkzeug
 numpy==2.0.1
     # via pandas
 pandas==2.2.2
     # via csv-playground
+peewee==3.17.6
+    # via sqlite-web
 pydantic==2.8.2
     # via csv-playground
+    # via sqlmodel
 pydantic-core==2.20.1
     # via pydantic
+pygments==2.18.0
+    # via sqlite-web
 python-dateutil==2.9.0.post0
     # via pandas
 pytz==2024.1
@@ -38,10 +58,19 @@ ruff==0.5.5
     # via csv-playground
 six==1.16.0
     # via python-dateutil
+sqlalchemy==2.0.32
+    # via sqlmodel
+sqlite-web==0.6.4
+    # via csv-playground
+sqlmodel==0.0.21
+    # via csv-playground
 typing-extensions==4.12.2
     # via pydantic
     # via pydantic-core
+    # via sqlalchemy
 tzdata==2024.1
     # via pandas
 urllib3==2.2.2
     # via requests
+werkzeug==3.0.3
+    # via flask

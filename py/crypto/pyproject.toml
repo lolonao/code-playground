@@ -1,26 +1,30 @@
-[tool.poetry]
+[project]
 name = "crypto"
 version = "0.1.0"
-description = ""
-authors = ["lolonao <lolonao47@gmail.com>"]
+description = "Add your description here"
+authors = [
+    { name = "lolonao", email = "lolonao47@gmail.com" }
+]
+dependencies = [
+    "ccxt>=4.3.79",
+    "yfinance>=0.2.41",
+    "pydantic>=2.8.2",
+    "requests>=2.32.3",
+    "schedule>=1.2.2",
+]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-requests = "^2.32.3"
-ccxt = "^4.3.63"
-pydantic = "^2.8.2"
-pandas = "^2.2.2"
-colorama = "^0.4.6"
-websocket = "^0.2.1"
-sqlmodel = "^0.0.20"
-duckdb = "^1.0.0"
-schedule = "^1.2.2"
-
-[tool.pyright]
-venvPath = "."
-venv = ".venv"
+requires-python = ">= 3.12"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/crypto"]
