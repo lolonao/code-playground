@@ -9,10 +9,8 @@
 #   generate-hashes: false
 #   universal: false
 
--e file:.
 asgiref==3.8.1
     # via django
-django==5.0.8
-    # via django-playground
+django==5.1
 sqlparse==0.5.1
     # via django

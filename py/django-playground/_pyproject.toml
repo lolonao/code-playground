@@ -1,0 +1,31 @@
+[project]
+name = "django-playground"
+version = "0.2.0"
+description = "Djangoを使っていろんなコードを書く。"
+authors = [
+    { name = "lolonao", email = "lolonao47@gmail.com" }
+]
+dependencies = [
+    "django>=5.0.8",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/django_playground"]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
