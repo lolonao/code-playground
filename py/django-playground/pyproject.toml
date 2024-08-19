@@ -24,3 +24,8 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/django_playground"]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
