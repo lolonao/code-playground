@@ -1,6 +1,7 @@
 from crawlee import PlaywrightCrawler, Configuration
 from crawlee.playwright import PlaywrightCrawlerContext
 from typing import List, Dict, Any
+import asyncio
 
 class AuctionCrawler(PlaywrightCrawler):
     def __init__(self, keyword: str):
@@ -65,5 +66,4 @@ async def main():
         print(f"出典: {result['source']}")
 
 if __name__ == "__main__":
-    import asyncio
     asyncio.run(main())
