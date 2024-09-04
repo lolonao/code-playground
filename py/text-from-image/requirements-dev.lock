@@ -9,5 +9,12 @@
 #   generate-hashes: false
 #   universal: false
 
+numpy==2.1.0
+    # via opencv-python
+opencv-python==4.10.0.84
+packaging==24.1
+    # via pytesseract
 pillow==10.4.0
+    # via pytesseract
+pytesseract==0.3.13
 tesseract==0.1.3

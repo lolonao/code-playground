@@ -20,3 +20,4 @@ dev-dependencies = []
 [tool.pyright]
 venvPath = "."
 venv = ".venv"
+
