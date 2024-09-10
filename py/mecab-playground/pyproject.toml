@@ -1,0 +1,18 @@
+[project]
+name = "mecab-playground"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "lolonao", email = "lolonao47@gmail.com" }
+]
+dependencies = [
+    "mecab-python3>=1.0.9",
+    "bs4>=0.0.2",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []
