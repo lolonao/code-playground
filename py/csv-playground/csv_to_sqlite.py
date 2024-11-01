@@ -1,14 +1,19 @@
+"""
+論文情報が格納されているCSVファイルから、詳細情報をSQLite3のデータベースファイルにインポートする。
+コンソールに表示されるのは、DBにインポートできない、壊れたレコードの情報のみ。
+壊れたレコードは、ほとんどの場合、ちょっと修正するだけで良い。
+"""
 import csv
-from sqlmodel import Field, SQLModel, Session
-from sqlmodel import create_engine
+from sqlmodel import Field, SQLModel, Session, create_engine
 import argparse
+
 
 class Paper(SQLModel, table=True):
     """論文の詳細情報"""
     id: int | None = Field(default=None, primary_key=True)
     category: str = Field(nullable=False)
     keyword: str = Field(nullable=False, unique=False)
-    genre: str = Field(nullable=False)  # ジャンルは複数ある。 enum?
+    genre: str = Field(nullable=False)
     title_e: str = Field(nullable=False)
     title_j: str = Field(nullable=False)
     consensus_url: str = Field(nullable=False)
@@ -20,12 +25,6 @@ class Paper(SQLModel, table=True):
     abstract: str = Field(nullable=False, unique=False)
     citations: int = Field(nullable=False)  # 引用数
     check: int | None = 0
-
-
-# # DBへの接続を定義
-# SQLITE_FILE = './paper-info.sqlite'
-# sqlite_url = f'sqlite:///{SQLITE_FILE}'
-# engine = create_engine(sqlite_url, echo=False)
 
 
 def create_db_and_tables(engine) -> None:
@@ -103,28 +102,19 @@ def csv_to_dict(csv_file_path: str) -> list[dict[str, str]]:
 
 def main():
     parser = argparse.ArgumentParser(description='指定された論文情報CSVファイルのデータをSQLiteデータベースにインポートするユーティリティ')
-
     # コマンドライン引数の処理
     parser.add_argument("csv_file", help="インポートするCSVファイル")
     # parser.add_argument("db_file", help="SQLiteデータベースファイル")
     args = parser.parse_args()
 
+    # TODO: コマンドラインで出力先のデータベースファイルを指定する
     # DBへの接続を定義
     SQLITE_FILE = './paper-info.sqlite'
     sqlite_url = f'sqlite:///{SQLITE_FILE}'
     engine = create_engine(sqlite_url, echo=False)
-
-
-    records = csv_to_dict(args.csv_file)
-
-    # CSV_FILE = "./data/お金_日本語.csv"
-    # records = csv_to_dict(CSV_FILE)
-    # print(len(records))
-    # print(len(records), records[0]["検索キーワード"])
-
-
     create_db_and_tables(engine)
 
+    records = csv_to_dict(args.csv_file)
     for r in records:
         try:
             paper = dict_to_paper_class(r)
