@@ -13,5 +13,6 @@ beautifulsoup4==4.12.3
     # via bs4
 bs4==0.0.2
 mecab-python3==1.0.9
+neologdn==0.5.3
 soupsieve==2.6
     # via beautifulsoup4

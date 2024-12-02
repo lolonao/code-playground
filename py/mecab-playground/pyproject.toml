@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "mecab-python3>=1.0.9",
     "bs4>=0.0.2",
+    "neologdn>=0.5.3",
 ]
 readme = "README.md"
 requires-python = ">= 3.12"
