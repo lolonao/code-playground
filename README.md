@@ -1,6 +1,6 @@
 # code-playground
 
-様々プログラミング言語での実験場
+様々プログラミング言語での実験場（自分用）
 
 
 - [Basic usage | Documentation | Poetry - Python dependency management and packaging made easy](https://python-poetry.org/docs/basic-usage/)
