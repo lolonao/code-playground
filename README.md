@@ -1,6 +1,6 @@
 # code-playground
 
-様々プログラミング言語での実験場（自分用）
+実験的なコードなどの保管場所。完全に自分用で、他人が参照・使用することは全く考慮していません。
 
 
 - [Basic usage | Documentation | Poetry - Python dependency management and packaging made easy](https://python-poetry.org/docs/basic-usage/)
